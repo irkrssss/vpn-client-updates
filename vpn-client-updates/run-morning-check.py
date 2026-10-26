@@ -173,12 +173,12 @@ def render_site(rows: list, updated_at: datetime) -> str:
                 "</tr>"
             )
         sections.append(
-            f"<section><h2>{html.escape(client)}</h2>"
+            f"<details class=\"client\"><summary>{html.escape(client)} <span>{len(client_rows)} платформ</span></summary>"
             "<div class=\"table-wrap\"><table><thead><tr>"
             "<th>Платформа</th><th>Версия</th><th>Дата релиза</th><th>Что изменилось</th>"
             "</tr></thead><tbody>"
             + "".join(table_rows)
-            + "</tbody></table></div></section>"
+            + "</tbody></table></div></details>"
         )
     local_time = updated_at.astimezone(LOCAL_TZ).strftime("%d.%m.%Y, %H:%M %Z")
     return f"""<!doctype html>
@@ -195,9 +195,12 @@ def render_site(rows: list, updated_at: datetime) -> str:
     main {{ max-width: 1440px; margin: 0 auto; }}
     h1 {{ margin: 0 0 8px; font-size: clamp(24px, 3vw, 34px); line-height: 1.2; }}
     .updated {{ margin: 0 0 28px; color: #656b73; font-size: 14px; }}
-    section {{ margin: 0 0 30px; }}
-    h2 {{ margin: 0 0 10px; font-size: 20px; }}
+    .client {{ margin: 0 0 10px; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }}
+    summary {{ padding: 13px 15px; cursor: pointer; font-size: 16px; font-weight: 600; }}
+    summary span {{ float: right; color: #656b73; font-size: 13px; font-weight: 400; }}
+    details[open] summary {{ border-bottom: 1px solid #e5e7eb; background: #f7f8fa; }}
     .table-wrap {{ overflow-x: auto; border: 1px solid #e5e7eb; border-radius: 10px; }}
+    details .table-wrap {{ border: 0; border-radius: 0; }}
     table {{ width: 100%; border-collapse: collapse; table-layout: fixed; }}
     th, td {{ padding: 11px 13px; border-bottom: 1px solid #e5e7eb; text-align: left; vertical-align: top; font-size: 14px; line-height: 1.45; overflow-wrap: anywhere; }}
     th {{ background: #f7f8fa; font-weight: 600; }}
@@ -211,7 +214,7 @@ def render_site(rows: list, updated_at: datetime) -> str:
 <body>
   <main>
     <h1>Актуальные стабильные версии VPN-клиентов</h1>
-    <p class="updated">Обновлено: {html.escape(local_time)}</p>
+    <p class="updated">Обновлено: {html.escape(local_time)} · Нажми на приложение, чтобы открыть версии</p>
     {''.join(sections)}
     <footer><a href="https://github.com/irkrssss/vpn-client-updates">Источник и автоматизация на GitHub</a></footer>
   </main>
