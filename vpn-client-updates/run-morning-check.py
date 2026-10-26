@@ -173,7 +173,7 @@ def render_site(rows: list, updated_at: datetime) -> str:
                 "</tr>"
             )
         sections.append(
-            f"<details class=\"client\"><summary>{html.escape(client)} <span>{len(client_rows)} платформ</span></summary>"
+            f"<details class=\"client\"><summary>{html.escape(client)}</summary>"
             "<div class=\"table-wrap\"><table><thead><tr>"
             "<th>Платформа</th><th>Версия</th><th>Дата релиза</th><th>Что изменилось</th>"
             "</tr></thead><tbody>"
@@ -197,7 +197,6 @@ def render_site(rows: list, updated_at: datetime) -> str:
     .updated {{ margin: 0 0 28px; color: #656b73; font-size: 14px; }}
     .client {{ margin: 0 0 10px; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }}
     summary {{ padding: 13px 15px; cursor: pointer; font-size: 16px; font-weight: 600; }}
-    summary span {{ float: right; color: #656b73; font-size: 13px; font-weight: 400; }}
     details[open] summary {{ border-bottom: 1px solid #e5e7eb; background: #f7f8fa; }}
     .table-wrap {{ overflow-x: auto; border: 1px solid #e5e7eb; border-radius: 10px; }}
     details .table-wrap {{ border: 0; border-radius: 0; }}
@@ -207,7 +206,6 @@ def render_site(rows: list, updated_at: datetime) -> str:
     tr:last-child td {{ border-bottom: 0; }}
     th:nth-child(1) {{ width: 24%; }} th:nth-child(2) {{ width: 13%; }} th:nth-child(3) {{ width: 15%; }} th:nth-child(4) {{ width: 48%; }}
     a {{ color: #2457a7; text-decoration: none; }} a:hover {{ text-decoration: underline; }}
-    footer {{ margin-top: 24px; color: #656b73; font-size: 13px; }}
     @media (max-width: 680px) {{ body {{ padding: 14px; }} table {{ min-width: 720px; }} }}
   </style>
 </head>
@@ -216,7 +214,6 @@ def render_site(rows: list, updated_at: datetime) -> str:
     <h1>Актуальные стабильные версии VPN-клиентов</h1>
     <p class="updated">Обновлено: {html.escape(local_time)} · Нажми на приложение, чтобы открыть версии</p>
     {''.join(sections)}
-    <footer><a href="https://github.com/irkrssss/vpn-client-updates">Источник и автоматизация на GitHub</a></footer>
   </main>
 </body>
 </html>
