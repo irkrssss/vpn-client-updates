@@ -1,0 +1,62 @@
+name: Update VPN client versions
+
+on:
+  schedule:
+    # Separate UTC schedules cover 07:00 in both summer and winter.
+    - cron: "0 5 * * *"
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-vpn-client-readme
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check local scheduled time
+        id: schedule
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          offset = datetime.now(ZoneInfo("Europe/Belgrade")).utcoffset()
+          utc_hour = 7 - int(offset.total_seconds() // 3600)
+          enabled = os.environ["EVENT_NAME"] == "workflow_dispatch" or os.environ["SCHEDULE"] == f"0 {utc_hour} * * *"
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write(f"run={str(enabled).lower()}\n")
+          PY
+
+      - name: Refresh versions and README
+        if: steps.schedule.outputs.run == 'true'
+        run: python vpn-client-updates/run-morning-check.py
+
+      - name: Commit updated reports
+        if: steps.schedule.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md vpn-client-updates/version-state.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "Update VPN client versions"
+          git push

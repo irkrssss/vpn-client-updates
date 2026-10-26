@@ -1,0 +1,82 @@
+{
+  "happ_android": {
+    "client": "HAPP",
+    "platform": "Android, Android TV",
+    "version": "4.9.0",
+    "date": "22.10.2026",
+    "notes": "Обновлено ядро Xray до 26.10.21; улучшены журнал, сортировка серверов и ввод на TV. Исправлены маршрутизация JSON-конфигураций и проверка ping после обновления подписки.",
+    "url": "https://github.com/Happ-proxy/happ-android/releases/tag/4.9.0"
+  },
+  "happ_desktop": {
+    "client": "HAPP",
+    "platform": "Windows, macOS, Linux",
+    "version": "4.5.4",
+    "date": "14.10.2026",
+    "notes": "Улучшили прокси для отдельных приложений и настройки подписок; исправили ошибки туннеля и маршрутизации.",
+    "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.5.4"
+  },
+  "incy_android": {
+    "client": "INCY",
+    "platform": "Android, Android TV",
+    "version": "3.8.1",
+    "date": "23.10.2026",
+    "notes": "—",
+    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v3.8.1"
+  },
+  "incy_desktop": {
+    "client": "INCY",
+    "platform": "Windows, macOS, Linux",
+    "version": "3.9.0",
+    "date": "18.10.2026",
+    "notes": "—",
+    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/desktop-v3.9.0"
+  },
+  "karing_desktop_android": {
+    "client": "Karing",
+    "platform": "Android, HarmonyOS, Windows, macOS, Linux",
+    "version": "1.2.25.2802",
+    "date": "10.09.2026",
+    "notes": "Исправили сбой подключения из-за конфигурации VLESS и обновление фонового изображения после восстановления копии.",
+    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.25.2802"
+  },
+  "happ_apple": {
+    "client": "HAPP",
+    "platform": "iPhone, iPad, macOS (App Store)",
+    "version": "6.2.0",
+    "date": "26.10.2026",
+    "notes": "Добавлена поддержка iPhone Duo; ядро Xray обновлено до 26.10.21. Добавлен параметр obfs-packet-size в ссылки Hysteria2 с обфускацией salamander/gecko.",
+    "url": "https://apps.apple.com/fr/app/happ-proxy-utility/id6504287215"
+  },
+  "happ_apple_tv": {
+    "client": "HAPP",
+    "platform": "Apple TV",
+    "version": "0.18.0",
+    "date": "17.08.2026",
+    "notes": "Добавили режимы проверки прокси и настройку таймаута проверки ping.",
+    "url": "https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274?platform=tv"
+  },
+  "incy_apple": {
+    "client": "INCY",
+    "platform": "iPhone, iPad, macOS (App Store), Apple TV",
+    "version": "2.6.5",
+    "date": "23.10.2026",
+    "notes": "Исправили ping, обновили ядро.",
+    "url": "https://apps.apple.com/us/app/incy/id6756943388"
+  },
+  "karing_apple": {
+    "client": "Karing",
+    "platform": "iPhone, iPad, Apple TV",
+    "version": "1.2.25.2802",
+    "date": "11.09.2026",
+    "notes": "Исправления ошибок и улучшения.",
+    "url": "https://apps.apple.com/us/app/karing/id6472431552"
+  },
+  "shadowrocket_apple": {
+    "client": "Shadowrocket",
+    "platform": "iPhone, iPad, macOS, Apple TV",
+    "version": "2.2.92",
+    "date": "07.09.2026",
+    "notes": "Добавили поддержку Sudoku, расширили DNS-маршрутизацию и функции Tailscale; улучшили импорт и исправили ошибки туннеля и DNS.",
+    "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?platform=tv"
+  }
+}
