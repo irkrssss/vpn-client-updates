@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Refresh the public README from official GitHub releases and App Store listings.
+"""Refresh the public README and Pages table from official release sources.
 
-Only README.md and version-state.json are written. No credentials or AI service
-are required. Russian change summaries are retained for the same version;
-a new version starts with an em dash until its summary is added.
+No credentials or AI service are required. Russian change summaries are
+retained for the same version; a new version starts with an em dash until its
+summary is added.
 """
 
 from datetime import datetime, timezone
@@ -19,6 +19,7 @@ import sys
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "version-state.json"
 README = ROOT.parent / "README.md"
+SITE = ROOT.parent / "site" / "index.html"
 LOCAL_TZ = ZoneInfo("Europe/Belgrade")
 GITHUB_API = "https://api.github.com/repos/{}/releases?per_page=100"
 README_START = "<!-- VPN_CLIENT_UPDATES_START -->"
@@ -155,6 +156,70 @@ def render_readme(existing: str, rows: list, updated_at: datetime) -> str:
     return existing[:start] + generated + existing[end + len(README_END):]
 
 
+def render_site(rows: list, updated_at: datetime) -> str:
+    sections = []
+    for client in CLIENTS:
+        client_rows = [row for row in rows if row["client"] == client]
+        if not client_rows:
+            continue
+        table_rows = []
+        for row in client_rows:
+            table_rows.append(
+                "<tr>"
+                f"<td><a href=\"{html.escape(row['url'], quote=True)}\" target=\"_blank\" rel=\"noopener noreferrer\">{html.escape(row['platform'])}</a></td>"
+                f"<td>{html.escape(row['version'])}</td>"
+                f"<td>{html.escape(row['date'])}</td>"
+                f"<td>{html.escape(row.get('notes') or '—')}</td>"
+                "</tr>"
+            )
+        sections.append(
+            f"<section><h2>{html.escape(client)}</h2>"
+            "<div class=\"table-wrap\"><table><thead><tr>"
+            "<th>Платформа</th><th>Версия</th><th>Дата релиза</th><th>Что изменилось</th>"
+            "</tr></thead><tbody>"
+            + "".join(table_rows)
+            + "</tbody></table></div></section>"
+        )
+    local_time = updated_at.astimezone(LOCAL_TZ).strftime("%d.%m.%Y, %H:%M %Z")
+    return f"""<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Актуальные стабильные версии VPN-клиентов</title>
+  <style>
+    :root {{ color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #202124; background: #fff; }}
+    * {{ box-sizing: border-box; }}
+    body {{ margin: 0; padding: 24px; }}
+    main {{ max-width: 1440px; margin: 0 auto; }}
+    h1 {{ margin: 0 0 8px; font-size: clamp(24px, 3vw, 34px); line-height: 1.2; }}
+    .updated {{ margin: 0 0 28px; color: #656b73; font-size: 14px; }}
+    section {{ margin: 0 0 30px; }}
+    h2 {{ margin: 0 0 10px; font-size: 20px; }}
+    .table-wrap {{ overflow-x: auto; border: 1px solid #e5e7eb; border-radius: 10px; }}
+    table {{ width: 100%; border-collapse: collapse; table-layout: fixed; }}
+    th, td {{ padding: 11px 13px; border-bottom: 1px solid #e5e7eb; text-align: left; vertical-align: top; font-size: 14px; line-height: 1.45; overflow-wrap: anywhere; }}
+    th {{ background: #f7f8fa; font-weight: 600; }}
+    tr:last-child td {{ border-bottom: 0; }}
+    th:nth-child(1) {{ width: 24%; }} th:nth-child(2) {{ width: 13%; }} th:nth-child(3) {{ width: 15%; }} th:nth-child(4) {{ width: 48%; }}
+    a {{ color: #2457a7; text-decoration: none; }} a:hover {{ text-decoration: underline; }}
+    footer {{ margin-top: 24px; color: #656b73; font-size: 13px; }}
+    @media (max-width: 680px) {{ body {{ padding: 14px; }} table {{ min-width: 720px; }} }}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Актуальные стабильные версии VPN-клиентов</h1>
+    <p class="updated">Обновлено: {html.escape(local_time)}</p>
+    {''.join(sections)}
+    <footer><a href="https://github.com/irkrssss/vpn-client-updates">Источник и автоматизация на GitHub</a></footer>
+  </main>
+</body>
+</html>
+"""
+
+
 def state_data(rows: list) -> dict:
     return {
         row["key"]: {
@@ -166,6 +231,7 @@ def state_data(rows: list) -> dict:
 
 
 def write_atomic(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_suffix(path.suffix + ".tmp")
     temp.write_text(content, encoding="utf-8")
     temp.replace(path)
@@ -187,8 +253,11 @@ def main() -> int:
         # A failed source or invalid README aborts before publishing any files.
         readme = render_readme(README.read_text(encoding="utf-8"), rows, datetime.now(LOCAL_TZ))
         state = json.dumps(state_data(rows), ensure_ascii=False, indent=2) + "\n"
+        now = datetime.now(LOCAL_TZ)
+        site = render_site(rows, now)
         write_atomic(README, readme)
         write_atomic(STATE, state)
+        write_atomic(SITE, site)
         if changed:
             summary = "; ".join(f"{r['client']} / {r['platform']}: {r['version']}" for r in changed)
             print(f"RESULT=UPDATES\nUPDATES: {summary}")
