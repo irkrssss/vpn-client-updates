@@ -10,10 +10,10 @@
   "happ_desktop": {
     "client": "HAPP",
     "platform": "Windows, macOS, Linux",
-    "version": "4.5.4",
-    "date": "14.10.2026",
-    "notes": "Улучшили прокси для отдельных приложений и настройки подписок; исправили ошибки туннеля и маршрутизации.",
-    "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.5.4"
+    "version": "4.6.1",
+    "date": "27.10.2026",
+    "notes": "—",
+    "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.6.1"
   },
   "incy_android": {
     "client": "INCY",

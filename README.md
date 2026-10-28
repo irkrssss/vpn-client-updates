@@ -2,14 +2,14 @@
 
 <!-- VPN_CLIENT_UPDATES_START -->
 
-Обновлено: 27.10.2026, 12:12 CET.
+Обновлено: 28.10.2026, 11:51 CET.
 
 ## HAPP
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
 | [Android, Android TV](https://github.com/Happ-proxy/happ-android/releases/tag/4.9.0) | 4.9.0 | 22.10.2026 | Обновлено ядро Xray до 26.10.21; улучшены журнал, сортировка серверов и ввод на TV. Исправлены маршрутизация JSON-конфигураций и проверка ping после обновления подписки. |
-| [Windows, macOS, Linux](https://github.com/Happ-proxy/happ-desktop/releases/tag/4.5.4) | 4.5.4 | 14.10.2026 | Улучшили прокси для отдельных приложений и настройки подписок; исправили ошибки туннеля и маршрутизации. |
+| [Windows, macOS, Linux](https://github.com/Happ-proxy/happ-desktop/releases/tag/4.6.1) | 4.6.1 | 27.10.2026 | — |
 | [iPhone, iPad, macOS (App Store)](https://apps.apple.com/fr/app/happ-proxy-utility/id6504287215) | 6.2.0 | 26.10.2026 | Добавлена поддержка iPhone Duo; ядро Xray обновлено до 26.10.21. Добавлен параметр obfs-packet-size в ссылки Hysteria2 с обфускацией salamander/gecko. |
 | [Apple TV](https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274?platform=tv) | 0.18.0 | 17.08.2026 | Добавили режимы проверки прокси и настройку таймаута проверки ping. |
 
