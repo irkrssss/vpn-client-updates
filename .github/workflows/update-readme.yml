@@ -1,6 +1,12 @@
 name: Update VPN client versions
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "vpn-client-updates/**"
+      - ".github/workflows/update-readme.yml"
   schedule:
     # Separate UTC schedules cover 07:00 in both summer and winter.
     - cron: "0 5 * * *"
@@ -44,7 +50,7 @@ jobs:
           from zoneinfo import ZoneInfo
           offset = datetime.now(ZoneInfo("Europe/Belgrade")).utcoffset()
           utc_hour = 7 - int(offset.total_seconds() // 3600)
-          enabled = os.environ["EVENT_NAME"] == "workflow_dispatch" or os.environ["SCHEDULE"] == f"0 {utc_hour} * * *"
+          enabled = os.environ["EVENT_NAME"] in ("workflow_dispatch", "push") or os.environ["SCHEDULE"] == f"0 {utc_hour} * * *"
           with open(os.environ["GITHUB_OUTPUT"], "a") as output:
               output.write(f"run={str(enabled).lower()}\n")
           PY
