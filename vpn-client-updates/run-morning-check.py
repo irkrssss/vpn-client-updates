@@ -15,6 +15,7 @@ import html
 import json
 import re
 import sys
+from blanc_sources import APPLE as BLANC_APPLE, fetch_rows as fetch_blanc_rows
 
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "version-state.json"
@@ -24,7 +25,7 @@ LOCAL_TZ = ZoneInfo("Europe/Belgrade")
 GITHUB_API = "https://api.github.com/repos/{}/releases?per_page=100"
 README_START = "<!-- VPN_CLIENT_UPDATES_START -->"
 README_END = "<!-- VPN_CLIENT_UPDATES_END -->"
-CLIENTS = ("HAPP", "INCY", "Karing", "Shadowrocket")
+CLIENTS = ("HAPP", "INCY", "Karing", "Shadowrocket", "BlancVPN")
 
 GITHUB_ROWS = [
     {"key": "happ_android", "client": "HAPP", "platform": "Android, Android TV", "repo": "Happ-proxy/happ-android", "kind": "latest"},
@@ -35,6 +36,7 @@ GITHUB_ROWS = [
 ]
 
 APPLE_ROWS = [
+    BLANC_APPLE,
     {"key": "happ_apple", "client": "HAPP", "platform": "iPhone, iPad, macOS (App Store)", "id": "6504287215", "country": "fr", "url": "https://apps.apple.com/fr/app/happ-proxy-utility/id6504287215"},
     {"key": "happ_apple_tv", "client": "HAPP", "platform": "Apple TV", "id": "6748297274", "country": "us", "url": "https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274?platform=tv"},
     {"key": "incy_apple", "client": "INCY", "platform": "iPhone, iPad, macOS (App Store), Apple TV", "id": "6756943388", "country": "us", "url": "https://apps.apple.com/us/app/incy/id6756943388"},
@@ -242,6 +244,7 @@ def main() -> int:
         previous = json.loads(STATE.read_text(encoding="utf-8"))
         rows = [fetch_github_row(config) for config in GITHUB_ROWS]
         rows.extend(fetch_apple_row(config) for config in APPLE_ROWS)
+        rows.extend(fetch_blanc_rows(curl_text, fetch_json, to_local_date))
         changed = []
         for row in rows:
             old = previous.get(row["key"], {})

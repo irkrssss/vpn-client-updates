@@ -4,7 +4,7 @@
     "platform": "Android, Android TV",
     "version": "4.9.0",
     "date": "22.10.2026",
-    "notes": "Обновлено ядро Xray до 26.10.21; улучшены журнал, сортировка серверов и ввод на TV. Исправлены маршрутизация JSON-конфигураций и проверка ping после обновления подписки.",
+    "notes": "Обновлено ядро Xray до 26.10.21, улучшен просмотр логов, добавлена сортировка серверов. Улучшены ввод и расположение клавиатуры на ТВ, повышена стабильность маршрутизации в JSON-конфигурациях. Исправлена проверка пинга после обновления подписки при сортировке по пингу и мелкие ошибки разбора данных.",
     "url": "https://github.com/Happ-proxy/happ-android/releases/tag/4.9.0"
   },
   "happ_desktop": {
@@ -12,7 +12,7 @@
     "platform": "Windows, macOS, Linux",
     "version": "4.6.1",
     "date": "27.10.2026",
-    "notes": "—",
+    "notes": "Добавлен менеджер загрузки геофайлов, улучшены обновления подписок и восстановление связи после сна. Альтернативный HWID доступен без Premium, если включён подпиской. Обновлено ядро Xray, исправлены ошибки прокси, TUN, запуска и интерфейса.",
     "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.6.1"
   },
   "incy_android": {
@@ -39,12 +39,20 @@
     "notes": "Исправили сбой подключения из-за конфигурации VLESS и обновление фонового изображения после восстановления копии.",
     "url": "https://github.com/KaringX/karing/releases/tag/v1.2.25.2802"
   },
+  "blanc_apple": {
+    "client": "BlancVPN",
+    "platform": "iPhone, iPad, macOS (Apple Silicon)",
+    "version": "1.10.0",
+    "date": "17.10.2026",
+    "notes": "—",
+    "url": "https://apps.apple.com/us/app/blancvpn/id6744585772"
+  },
   "happ_apple": {
     "client": "HAPP",
     "platform": "iPhone, iPad, macOS (App Store)",
     "version": "6.2.0",
     "date": "26.10.2026",
-    "notes": "Добавлена поддержка iPhone Duo; ядро Xray обновлено до 26.10.21. Добавлен параметр obfs-packet-size в ссылки Hysteria2 с обфускацией salamander/gecko.",
+    "notes": "Добавлена поддержка iPhone Duo, обновлено ядро Xray до версии 26.10.21 и параметра obfs-packet-size в ссылках Hysteria2 с обфускацией salamander/gecko.",
     "url": "https://apps.apple.com/fr/app/happ-proxy-utility/id6504287215"
   },
   "happ_apple_tv": {
@@ -60,7 +68,7 @@
     "platform": "iPhone, iPad, macOS (App Store), Apple TV",
     "version": "2.6.6",
     "date": "27.10.2026",
-    "notes": "—",
+    "notes": "Исправлены ошибки измерения пинга и обновлены ядра подключения.",
     "url": "https://apps.apple.com/us/app/incy/id6756943388"
   },
   "karing_apple": {
@@ -78,5 +86,29 @@
     "date": "07.09.2026",
     "notes": "Добавили поддержку Sudoku, расширили DNS-маршрутизацию и функции Tailscale; улучшили импорт и исправили ошибки туннеля и DNS.",
     "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?platform=tv"
+  },
+  "blanc_android": {
+    "client": "BlancVPN",
+    "platform": "Android",
+    "version": "1.10.0",
+    "date": "15.10.2026",
+    "notes": "—",
+    "url": "https://play.google.com/store/apps/details?id=com.blancvpn.app&hl=en&gl=US"
+  },
+  "blanc_chrome": {
+    "client": "BlancVPN",
+    "platform": "Chrome / Chromium (расширение)",
+    "version": "1.21.0",
+    "date": "21.10.2026",
+    "notes": "—",
+    "url": "https://chromewebstore.google.com/detail/fbnnaeejnbpbbkmnieomfamekibceoob?hl=en"
+  },
+  "blanc_firefox": {
+    "client": "BlancVPN",
+    "platform": "Firefox (расширение)",
+    "version": "1.21.0",
+    "date": "21.10.2026",
+    "notes": "—",
+    "url": "https://addons.mozilla.org/en-US/firefox/addon/blancvpn-fast-and-secure-proxy/"
   }
 }
