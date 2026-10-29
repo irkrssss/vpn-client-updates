@@ -2,7 +2,7 @@
 
 <!-- VPN_CLIENT_UPDATES_START -->
 
-Обновлено: 29.10.2026, 06:47 CET.
+Обновлено: 29.10.2026, 06:50 CET.
 
 ## HAPP
 
@@ -39,7 +39,7 @@
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
 | [iPhone, iPad, macOS (Apple Silicon)](https://apps.apple.com/us/app/blancvpn/id6744585772) | 1.10.0 | 17.10.2026 | — |
-| [Android](https://play.google.com/store/apps/details?id=com.blancvpn.app&hl=en&gl=US) | 1.10.0 | 15.10.2026 | — |
+| [Android](https://play.google.com/store/apps/details?id=com.blancvpn.app&hl=en&gl=US) | 1.10.0 | 14.10.2026 | — |
 | [Chrome / Chromium (расширение)](https://chromewebstore.google.com/detail/fbnnaeejnbpbbkmnieomfamekibceoob?hl=en) | 1.21.0 | 21.10.2026 | — |
 | [Firefox (расширение)](https://addons.mozilla.org/en-US/firefox/addon/blancvpn-fast-and-secure-proxy/) | 1.21.0 | 21.10.2026 | — |
 
