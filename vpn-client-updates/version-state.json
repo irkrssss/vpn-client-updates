@@ -82,9 +82,9 @@
   "shadowrocket_apple": {
     "client": "Shadowrocket",
     "platform": "iPhone, iPad, macOS, Apple TV",
-    "version": "2.2.92",
-    "date": "07.09.2026",
-    "notes": "Добавили поддержку Sudoku, расширили DNS-маршрутизацию и функции Tailscale; улучшили импорт и исправили ошибки туннеля и DNS.",
+    "version": "2.2.93",
+    "date": "29.10.2026",
+    "notes": "—",
     "url": "https://apps.apple.com/us/app/shadowrocket/id932747118?platform=tv"
   },
   "blanc_android": {

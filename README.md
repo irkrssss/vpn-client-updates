@@ -2,7 +2,7 @@
 
 <!-- VPN_CLIENT_UPDATES_START -->
 
-Обновлено: 29.10.2026, 12:55 CET.
+Обновлено: 30.10.2026, 07:19 CET.
 
 ## HAPP
 
@@ -32,7 +32,7 @@
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
-| [iPhone, iPad, macOS, Apple TV](https://apps.apple.com/us/app/shadowrocket/id932747118?platform=tv) | 2.2.92 | 07.09.2026 | Добавили поддержку Sudoku, расширили DNS-маршрутизацию и функции Tailscale; улучшили импорт и исправили ошибки туннеля и DNS. |
+| [iPhone, iPad, macOS, Apple TV](https://apps.apple.com/us/app/shadowrocket/id932747118?platform=tv) | 2.2.93 | 29.10.2026 | — |
 
 ## BlancVPN
 
