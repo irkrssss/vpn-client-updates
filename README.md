@@ -2,7 +2,7 @@
 
 <!-- VPN_CLIENT_UPDATES_START -->
 
-Обновлено: 30.10.2026, 14:14 CET.
+Обновлено: 31.10.2026, 13:52 CET.
 
 ## HAPP
 
@@ -19,7 +19,7 @@
 |---|---:|---|---|
 | [Android, Android TV](https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v3.8.1) | 3.8.1 | 23.10.2026 | — |
 | [Windows, macOS, Linux](https://github.com/INCY-DEV/incy-platforms/releases/tag/desktop-v3.9.0) | 3.9.0 | 18.10.2026 | — |
-| [iPhone, iPad, macOS (App Store), Apple TV](https://apps.apple.com/us/app/incy/id6756943388) | 2.6.6 | 27.10.2026 | Исправлены ошибки измерения пинга и обновлены ядра подключения. |
+| [iPhone, iPad, macOS (App Store), Apple TV](https://apps.apple.com/us/app/incy/id6756943388) | 2.7.0 | 30.10.2026 | — |
 
 ## Karing
 

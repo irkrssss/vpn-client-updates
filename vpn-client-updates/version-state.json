@@ -66,9 +66,9 @@
   "incy_apple": {
     "client": "INCY",
     "platform": "iPhone, iPad, macOS (App Store), Apple TV",
-    "version": "2.6.6",
-    "date": "27.10.2026",
-    "notes": "Исправлены ошибки измерения пинга и обновлены ядра подключения.",
+    "version": "2.7.0",
+    "date": "30.10.2026",
+    "notes": "—",
     "url": "https://apps.apple.com/us/app/incy/id6756943388"
   },
   "karing_apple": {
