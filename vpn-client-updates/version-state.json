@@ -18,10 +18,10 @@
   "incy_android": {
     "client": "INCY",
     "platform": "Android, Android TV",
-    "version": "3.8.1",
-    "date": "23.10.2026",
+    "version": "3.9.8",
+    "date": "02.11.2026",
     "notes": "—",
-    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v3.8.1"
+    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v3.9.8"
   },
   "incy_desktop": {
     "client": "INCY",
@@ -50,9 +50,9 @@
   "happ_apple": {
     "client": "HAPP",
     "platform": "iPhone, iPad, macOS (App Store)",
-    "version": "6.2.0",
-    "date": "26.10.2026",
-    "notes": "Добавлена поддержка iPhone Duo, обновлено ядро Xray до версии 26.10.21 и параметра obfs-packet-size в ссылках Hysteria2 с обфускацией salamander/gecko.",
+    "version": "6.3.0",
+    "date": "02.11.2026",
+    "notes": "—",
     "url": "https://apps.apple.com/fr/app/happ-proxy-utility/id6504287215"
   },
   "happ_apple_tv": {
@@ -98,16 +98,16 @@
   "blanc_chrome": {
     "client": "BlancVPN",
     "platform": "Chrome / Chromium (расширение)",
-    "version": "1.21.0",
-    "date": "21.10.2026",
+    "version": "1.22.0",
+    "date": "02.11.2026",
     "notes": "—",
     "url": "https://chromewebstore.google.com/detail/fbnnaeejnbpbbkmnieomfamekibceoob?hl=en"
   },
   "blanc_firefox": {
     "client": "BlancVPN",
     "platform": "Firefox (расширение)",
-    "version": "1.21.0",
-    "date": "21.10.2026",
+    "version": "1.22.0",
+    "date": "02.11.2026",
     "notes": "—",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/blancvpn-fast-and-secure-proxy/"
   }
