@@ -2,10 +2,10 @@
   "happ_android": {
     "client": "HAPP",
     "platform": "Android, Android TV",
-    "version": "4.9.0",
-    "date": "22.10.2026",
-    "notes": "Обновлено ядро Xray до 26.10.21, улучшен просмотр логов, добавлена сортировка серверов. Улучшены ввод и расположение клавиатуры на ТВ, повышена стабильность маршрутизации в JSON-конфигурациях. Исправлена проверка пинга после обновления подписки при сортировке по пингу и мелкие ошибки разбора данных.",
-    "url": "https://github.com/Happ-proxy/happ-android/releases/tag/4.9.0"
+    "version": "4.10.1",
+    "date": "04.11.2026",
+    "notes": "—",
+    "url": "https://github.com/Happ-proxy/happ-android/releases/tag/4.10.1"
   },
   "happ_desktop": {
     "client": "HAPP",
@@ -18,10 +18,10 @@
   "incy_android": {
     "client": "INCY",
     "platform": "Android, Android TV",
-    "version": "3.9.8",
-    "date": "02.11.2026",
+    "version": "3.9.9",
+    "date": "05.11.2026",
     "notes": "—",
-    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v3.9.8"
+    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v3.9.9"
   },
   "incy_desktop": {
     "client": "INCY",
@@ -58,9 +58,9 @@
   "happ_apple_tv": {
     "client": "HAPP",
     "platform": "Apple TV",
-    "version": "0.18.0",
-    "date": "17.08.2026",
-    "notes": "Добавили режимы проверки прокси и настройку таймаута проверки ping.",
+    "version": "0.21.0",
+    "date": "05.11.2026",
+    "notes": "—",
     "url": "https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274?platform=tv"
   },
   "incy_apple": {
@@ -98,16 +98,16 @@
   "blanc_chrome": {
     "client": "BlancVPN",
     "platform": "Chrome / Chromium (расширение)",
-    "version": "1.22.0",
-    "date": "02.11.2026",
+    "version": "1.23.0",
+    "date": "05.11.2026",
     "notes": "—",
     "url": "https://chromewebstore.google.com/detail/fbnnaeejnbpbbkmnieomfamekibceoob?hl=en"
   },
   "blanc_firefox": {
     "client": "BlancVPN",
     "platform": "Firefox (расширение)",
-    "version": "1.22.0",
-    "date": "02.11.2026",
+    "version": "1.23.0",
+    "date": "05.11.2026",
     "notes": "—",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/blancvpn-fast-and-secure-proxy/"
   }
