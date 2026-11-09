@@ -34,10 +34,10 @@
   "karing_desktop_android": {
     "client": "Karing",
     "platform": "Android, HarmonyOS, Windows, macOS, Linux",
-    "version": "1.2.25.2802",
-    "date": "10.09.2026",
-    "notes": "Исправили сбой подключения из-за конфигурации VLESS и обновление фонового изображения после восстановления копии.",
-    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.25.2802"
+    "version": "1.2.26.2923",
+    "date": "09.11.2026",
+    "notes": "—",
+    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2923"
   },
   "blanc_apple": {
     "client": "BlancVPN",

@@ -2,7 +2,7 @@
 
 <!-- VPN_CLIENT_UPDATES_START -->
 
-Обновлено: 08.11.2026, 14:42 CET.
+Обновлено: 09.11.2026, 17:41 CET.
 
 ## HAPP
 
@@ -25,7 +25,7 @@
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
-| [Android, HarmonyOS, Windows, macOS, Linux](https://github.com/KaringX/karing/releases/tag/v1.2.25.2802) | 1.2.25.2802 | 10.09.2026 | Исправили сбой подключения из-за конфигурации VLESS и обновление фонового изображения после восстановления копии. |
+| [Android, HarmonyOS, Windows, macOS, Linux](https://github.com/KaringX/karing/releases/tag/v1.2.26.2923) | 1.2.26.2923 | 09.11.2026 | — |
 | [iPhone, iPad, Apple TV](https://apps.apple.com/us/app/karing/id6472431552) | 1.2.25.2802 | 11.09.2026 | Исправления ошибок и улучшения. |
 
 ## Shadowrocket
