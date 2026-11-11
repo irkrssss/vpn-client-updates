@@ -34,10 +34,10 @@
   "karing_desktop_android": {
     "client": "Karing",
     "platform": "Android, HarmonyOS, Windows, macOS, Linux",
-    "version": "1.2.26.2925",
-    "date": "10.11.2026",
+    "version": "1.2.26.2927",
+    "date": "11.11.2026",
     "notes": "—",
-    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2925"
+    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2927"
   },
   "blanc_apple": {
     "client": "BlancVPN",
@@ -50,8 +50,8 @@
   "happ_apple": {
     "client": "HAPP",
     "platform": "iPhone, iPad, macOS (App Store)",
-    "version": "6.3.0",
-    "date": "02.11.2026",
+    "version": "6.4.0",
+    "date": "11.11.2026",
     "notes": "—",
     "url": "https://apps.apple.com/fr/app/happ-proxy-utility/id6504287215"
   },
