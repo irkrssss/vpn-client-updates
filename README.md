@@ -2,7 +2,7 @@
 
 <!-- VPN_CLIENT_UPDATES_START -->
 
-Обновлено: 11.11.2026, 15:36 CET.
+Обновлено: 12.11.2026, 16:28 CET.
 
 ## HAPP
 
@@ -25,7 +25,7 @@
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
-| [Android, HarmonyOS, Windows, macOS, Linux](https://github.com/KaringX/karing/releases/tag/v1.2.26.2927) | 1.2.26.2927 | 11.11.2026 | — |
+| [Android, HarmonyOS, Windows, macOS, Linux](https://github.com/KaringX/karing/releases/tag/v1.2.26.2929) | 1.2.26.2929 | 12.11.2026 | — |
 | [iPhone, iPad, Apple TV](https://apps.apple.com/us/app/karing/id6472431552) | 1.2.25.2802 | 11.09.2026 | Исправления ошибок и улучшения. |
 
 ## Shadowrocket
@@ -38,8 +38,8 @@
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
-| [iPhone, iPad, macOS (Apple Silicon)](https://apps.apple.com/us/app/blancvpn/id6744585772) | 1.10.0 | 17.10.2026 | — |
-| [Android](https://play.google.com/store/apps/details?id=com.blancvpn.app&hl=en&gl=US) | 1.10.0 | 14.10.2026 | — |
+| [iPhone, iPad, macOS (Apple Silicon)](https://apps.apple.com/us/app/blancvpn/id6744585772) | 1.11.0 | 11.11.2026 | — |
+| [Android](https://play.google.com/store/apps/details?id=com.blancvpn.app&hl=en&gl=US) | 1.11.0 | 06.11.2026 | — |
 | [Chrome / Chromium (расширение)](https://chromewebstore.google.com/detail/fbnnaeejnbpbbkmnieomfamekibceoob?hl=en) | 1.23.0 | 05.11.2026 | — |
 | [Firefox (расширение)](https://addons.mozilla.org/en-US/firefox/addon/blancvpn-fast-and-secure-proxy/) | 1.23.0 | 05.11.2026 | — |
 

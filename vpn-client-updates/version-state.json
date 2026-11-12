@@ -34,16 +34,16 @@
   "karing_desktop_android": {
     "client": "Karing",
     "platform": "Android, HarmonyOS, Windows, macOS, Linux",
-    "version": "1.2.26.2927",
-    "date": "11.11.2026",
+    "version": "1.2.26.2929",
+    "date": "12.11.2026",
     "notes": "—",
-    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2927"
+    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2929"
   },
   "blanc_apple": {
     "client": "BlancVPN",
     "platform": "iPhone, iPad, macOS (Apple Silicon)",
-    "version": "1.10.0",
-    "date": "17.10.2026",
+    "version": "1.11.0",
+    "date": "11.11.2026",
     "notes": "—",
     "url": "https://apps.apple.com/us/app/blancvpn/id6744585772"
   },
@@ -90,8 +90,8 @@
   "blanc_android": {
     "client": "BlancVPN",
     "platform": "Android",
-    "version": "1.10.0",
-    "date": "14.10.2026",
+    "version": "1.11.0",
+    "date": "06.11.2026",
     "notes": "—",
     "url": "https://play.google.com/store/apps/details?id=com.blancvpn.app&hl=en&gl=US"
   },
