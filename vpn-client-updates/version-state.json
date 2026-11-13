@@ -34,10 +34,10 @@
   "karing_desktop_android": {
     "client": "Karing",
     "platform": "Android, HarmonyOS, Windows, macOS, Linux",
-    "version": "1.2.26.2929",
-    "date": "12.11.2026",
+    "version": "1.2.26.2931",
+    "date": "13.11.2026",
     "notes": "—",
-    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2929"
+    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2931"
   },
   "blanc_apple": {
     "client": "BlancVPN",
