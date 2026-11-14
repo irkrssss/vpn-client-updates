@@ -2,7 +2,7 @@
 
 <!-- VPN_CLIENT_UPDATES_START -->
 
-Обновлено: 13.11.2026, 15:45 CET.
+Обновлено: 14.11.2026, 14:41 CET.
 
 ## HAPP
 
@@ -17,8 +17,8 @@
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
-| [Android, Android TV](https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v3.9.9) | 3.9.9 | 05.11.2026 | — |
-| [Windows, macOS, Linux](https://github.com/INCY-DEV/incy-platforms/releases/tag/desktop-v3.9.0) | 3.9.0 | 18.10.2026 | — |
+| [Android, Android TV](https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v4.0.0) | 4.0.0 | 14.11.2026 | — |
+| [Windows, macOS, Linux](https://github.com/INCY-DEV/incy-platforms/releases/tag/desktop-v3.9.1) | 3.9.1 | 14.11.2026 | — |
 | [iPhone, iPad, macOS (App Store), Apple TV](https://apps.apple.com/us/app/incy/id6756943388) | 2.7.2 | 05.11.2026 | — |
 
 ## Karing
