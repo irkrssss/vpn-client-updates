@@ -2,13 +2,13 @@
 
 <!-- VPN_CLIENT_UPDATES_START -->
 
-Обновлено: 14.11.2026, 14:41 CET.
+Обновлено: 16.11.2026, 12:50 CET.
 
 ## HAPP
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
-| [Android, Android TV](https://github.com/Happ-proxy/happ-android/releases/tag/4.10.1) | 4.10.1 | 04.11.2026 | — |
+| [Android, Android TV](https://github.com/Happ-proxy/happ-android/releases/tag/4.11.2) | 4.11.2 | 16.11.2026 | — |
 | [Windows, macOS, Linux](https://github.com/Happ-proxy/happ-desktop/releases/tag/4.7.2) | 4.7.2 | 30.10.2026 | — |
 | [iPhone, iPad, macOS (App Store)](https://apps.apple.com/fr/app/happ-proxy-utility/id6504287215) | 6.4.0 | 11.11.2026 | — |
 | [Apple TV](https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274?platform=tv) | 0.21.0 | 05.11.2026 | — |
@@ -17,15 +17,15 @@
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
-| [Android, Android TV](https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v4.0.0) | 4.0.0 | 14.11.2026 | — |
+| [Android, Android TV](https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v4.0.1) | 4.0.1 | 16.11.2026 | — |
 | [Windows, macOS, Linux](https://github.com/INCY-DEV/incy-platforms/releases/tag/desktop-v3.9.1) | 3.9.1 | 14.11.2026 | — |
-| [iPhone, iPad, macOS (App Store), Apple TV](https://apps.apple.com/us/app/incy/id6756943388) | 2.7.2 | 05.11.2026 | — |
+| [iPhone, iPad, macOS (App Store), Apple TV](https://apps.apple.com/us/app/incy/id6756943388) | 2.7.3 | 15.11.2026 | — |
 
 ## Karing
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
-| [Android, HarmonyOS, Windows, macOS, Linux](https://github.com/KaringX/karing/releases/tag/v1.2.26.2931) | 1.2.26.2931 | 13.11.2026 | — |
+| [Android, HarmonyOS, Windows, macOS, Linux](https://github.com/KaringX/karing/releases/tag/v1.2.26.2932) | 1.2.26.2932 | 16.11.2026 | — |
 | [iPhone, iPad, Apple TV](https://apps.apple.com/us/app/karing/id6472431552) | 1.2.25.2802 | 11.09.2026 | Исправления ошибок и улучшения. |
 
 ## Shadowrocket

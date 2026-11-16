@@ -2,10 +2,10 @@
   "happ_android": {
     "client": "HAPP",
     "platform": "Android, Android TV",
-    "version": "4.10.1",
-    "date": "04.11.2026",
+    "version": "4.11.2",
+    "date": "16.11.2026",
     "notes": "—",
-    "url": "https://github.com/Happ-proxy/happ-android/releases/tag/4.10.1"
+    "url": "https://github.com/Happ-proxy/happ-android/releases/tag/4.11.2"
   },
   "happ_desktop": {
     "client": "HAPP",
@@ -18,10 +18,10 @@
   "incy_android": {
     "client": "INCY",
     "platform": "Android, Android TV",
-    "version": "4.0.0",
-    "date": "14.11.2026",
+    "version": "4.0.1",
+    "date": "16.11.2026",
     "notes": "—",
-    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v4.0.0"
+    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v4.0.1"
   },
   "incy_desktop": {
     "client": "INCY",
@@ -34,10 +34,10 @@
   "karing_desktop_android": {
     "client": "Karing",
     "platform": "Android, HarmonyOS, Windows, macOS, Linux",
-    "version": "1.2.26.2931",
-    "date": "13.11.2026",
+    "version": "1.2.26.2932",
+    "date": "16.11.2026",
     "notes": "—",
-    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2931"
+    "url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2932"
   },
   "blanc_apple": {
     "client": "BlancVPN",
@@ -66,8 +66,8 @@
   "incy_apple": {
     "client": "INCY",
     "platform": "iPhone, iPad, macOS (App Store), Apple TV",
-    "version": "2.7.2",
-    "date": "05.11.2026",
+    "version": "2.7.3",
+    "date": "15.11.2026",
     "notes": "—",
     "url": "https://apps.apple.com/us/app/incy/id6756943388"
   },
