@@ -10,10 +10,10 @@
   "happ_desktop": {
     "client": "HAPP",
     "platform": "Windows, macOS, Linux",
-    "version": "4.7.2",
-    "date": "30.10.2026",
+    "version": "4.8.3",
+    "date": "20.11.2026",
     "notes": "—",
-    "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.7.2"
+    "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.8.3"
   },
   "incy_android": {
     "client": "INCY",
