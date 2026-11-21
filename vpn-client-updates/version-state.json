@@ -18,10 +18,10 @@
   "incy_android": {
     "client": "INCY",
     "platform": "Android, Android TV",
-    "version": "4.0.1",
-    "date": "16.11.2026",
+    "version": "4.0.3",
+    "date": "21.11.2026",
     "notes": "—",
-    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v4.0.1"
+    "url": "https://github.com/INCY-DEV/incy-platforms/releases/tag/android-v4.0.3"
   },
   "incy_desktop": {
     "client": "INCY",
