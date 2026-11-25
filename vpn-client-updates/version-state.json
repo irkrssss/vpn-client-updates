@@ -10,10 +10,10 @@
   "happ_desktop": {
     "client": "HAPP",
     "platform": "Windows, macOS, Linux",
-    "version": "4.8.6",
-    "date": "24.11.2026",
+    "version": "4.8.8",
+    "date": "25.11.2026",
     "notes": "—",
-    "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.8.6"
+    "url": "https://github.com/Happ-proxy/happ-desktop/releases/tag/4.8.8"
   },
   "incy_android": {
     "client": "INCY",
@@ -74,9 +74,9 @@
   "karing_apple": {
     "client": "Karing",
     "platform": "iPhone, iPad, Apple TV",
-    "version": "1.2.25.2802",
-    "date": "11.09.2026",
-    "notes": "Исправления ошибок и улучшения.",
+    "version": "1.2.26.2934",
+    "date": "25.11.2026",
+    "notes": "—",
     "url": "https://apps.apple.com/us/app/karing/id6472431552"
   },
   "shadowrocket_apple": {
@@ -98,16 +98,16 @@
   "blanc_chrome": {
     "client": "BlancVPN",
     "platform": "Chrome / Chromium (расширение)",
-    "version": "1.23.0",
-    "date": "05.11.2026",
+    "version": "1.23.1",
+    "date": "25.11.2026",
     "notes": "—",
     "url": "https://chromewebstore.google.com/detail/fbnnaeejnbpbbkmnieomfamekibceoob?hl=en"
   },
   "blanc_firefox": {
     "client": "BlancVPN",
     "platform": "Firefox (расширение)",
-    "version": "1.23.0",
-    "date": "05.11.2026",
+    "version": "1.23.1",
+    "date": "25.11.2026",
     "notes": "—",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/blancvpn-fast-and-secure-proxy/"
   }
