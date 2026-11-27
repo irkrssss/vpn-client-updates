@@ -2,14 +2,14 @@
 
 <!-- VPN_CLIENT_UPDATES_START -->
 
-Обновлено: 26.11.2026, 18:09 CET.
+Обновлено: 27.11.2026, 17:52 CET.
 
 ## HAPP
 
 | Платформа | Версия | Дата релиза | Что изменилось |
 |---|---:|---|---|
-| [Android, Android TV](https://github.com/Happ-proxy/happ-android/releases/tag/4.11.2) | 4.11.2 | 16.11.2026 | — |
-| [Windows, macOS, Linux](https://github.com/Happ-proxy/happ-desktop/releases/tag/4.8.8) | 4.8.8 | 25.11.2026 | — |
+| [Android, Android TV](https://github.com/Happ-proxy/happ-android/releases/tag/4.12.0) | 4.12.0 | 20.11.2026 | — |
+| [Windows, macOS, Linux](https://github.com/Happ-proxy/happ-desktop/releases/tag/silent_update) | silent_update | 24.11.2026 | — |
 | [iPhone, iPad, macOS (App Store)](https://apps.apple.com/fr/app/happ-proxy-utility/id6504287215) | 6.4.0 | 11.11.2026 | — |
 | [Apple TV](https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274?platform=tv) | 0.21.0 | 05.11.2026 | — |
 
